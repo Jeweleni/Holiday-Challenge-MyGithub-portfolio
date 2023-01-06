@@ -22,7 +22,7 @@ function Profile({
     <HelmetProvider>
       <title>My Github Portfolio</title>
       <meta name="description" content="Frontend Developer" />
-      <link rel="canonical" href="http://localhost:3001/portfolio/" />
+      <link rel="canonical" href="http://localhost:3000/portfolio/" />
     <div id="profile">
       <div id="profile-section">
       <div id="avatar">
@@ -34,7 +34,7 @@ function Profile({
         <div className="bio">
         <p>
           {bio}</p>
-          <a href="https://api.github.com/users/jeweleni"></a>
+          <a href="https://github.com/users/jeweleni"></a>
           </div>
         <p>{location}</p>
         <div>

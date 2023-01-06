@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
 
 * {
-  /* margin: 0; */
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0;
+  font-family: "Josefin Sans";
 }
+
 .App {
   font-family: "Josefin Sans", sans-serif;
   width: 100vw;
@@ -79,13 +79,19 @@
 }
 
 #profile #avatar {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 90px;
 }
 #profile-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+#light .profile-section {
+  color: rgba(0, 0, 0, 0.907);
+}
+#dark .profile-section{
+  color: rgb(255, 255, 255);
 }
 
 #data-card {
@@ -99,6 +105,14 @@
   margin-right: 30px;
 
 }
+
+#light .data-card {
+  color: rgba(0, 0, 0, 0.907);
+}
+#dark .data-card{
+  color: rgb(255, 255, 255);
+}
+
 h1 {
   font-size: 2rem;
   text-align: left;
@@ -166,9 +180,17 @@ a .buttons {
 }
 
 .bio {
-  font-size: 25px;
+  font-size: 30px;
+  
+}
+#light .bio {
+  color: rgba(0, 0, 0, 0.907);
+}
+#dark .bio {
   color: rgb(255, 255, 255);
 }
+
+
 #user-data {
   height: 90%;
   width: 285px;
@@ -176,9 +198,16 @@ a .buttons {
   font-size: 9px;
   text-align: right;
   position: relative;
-
   
 }
+
+#light .user-data {
+  color: rgba(0, 0, 0, 0.907);
+}
+#dark .user-data{
+  color: rgb(255, 255, 255);
+}
+
 #paginate {
   position: relative;
   margin-top: 50px;
@@ -234,12 +263,7 @@ a {
 
   }
 
- 
-  #user-data {
-    height: 180px;
-    font-size: 20px;
-  }
-  #paginate {
+ #paginate {
     left: 100px;
     position: absolute;
   }

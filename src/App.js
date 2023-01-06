@@ -25,11 +25,11 @@ export const ThemeContext = createContext("null");
 function App() {
   
   const [theme, setTheme] = useState("dark");
-  // const [portfolio, setPortFolio] = useState([]);
-  // const [totalPages, setTotalPages] = useState(7);
-  // const [loading, setLoading] = useState(true);
-  // const [page, setPage] = useState(1);
-  // const [profiledata, setProfileData] = useState([]);
+  const [portfolio, setPortFolio] = useState([]);
+  const [totalPages, setTotalPages] = useState(7);
+  const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const [profiledata, setProfileData] = useState([]);
   const [explode, setExplode] = useState(false);
 
   useEffect(() => {
@@ -39,10 +39,10 @@ function App() {
     const profilePromise = axios.get("https://api.github.com/users/jeweleni");
     Promise.all([repoPromise, profilePromise])
       .then(([repoResponse, profileResponse]) => {
-        // setPortFolio(repoResponse.data);
+        setPortFolio(repoResponse.data);
         // setTotalPages(Math.ceil(repoResponse.data.length / USER_PER_PAGE));
-        // setLoading(false);
-        // setProfileData(profileResponse.data);
+        setLoading(false);
+        setProfileData(profileResponse.data);
       })
       .catch((error) => {
         console.log(error);
@@ -80,23 +80,24 @@ function App() {
               {...{ explode }}
             >
 
-              <Navbar/>
-              <Hero/>
+              {/* <Navbar/>
+              <Hero/> */}
               
-              {/* <Profile
-                // alt="fetched data"
-                // imgSrc={profiledata.avatar_url}
-                // name={profiledata.name}
-                // bio={profiledata.bio}
-                // location={profiledata.location}
-                // followers={profiledata.followers}
-                // following={profiledata.following}
-                // public_repos={profiledata.public_repos}
-                // html_url={profiledata.html_url}
-                // twitter_username={profiledata.twitter_username}
-                // medium_username={profiledata.medium_username}
+              <Profile
+                alt="fetched data"
+                imgSrc={profiledata.avatar_url}
+                name={profiledata.name}
+                bio={profiledata.bio}
+                location={profiledata.location}
+                followers={profiledata.followers}
+                following={profiledata.following}
+                public_repos={profiledata.public_repos}
+                html_url={profiledata.html_url}
+                twitter_username={profiledata.twitter_username}
+                medium_username={profiledata.medium_username}
               />
-               */}
+              <Github/>
+              
               <div
                 style={{
                   minHeight: "100%",
@@ -104,7 +105,7 @@ function App() {
                   flexDirection: "column",
                 }}
               >
-           
+                 
              
                 <Routes>
                   <Route path="/Profile" element={<Profile />}/>
