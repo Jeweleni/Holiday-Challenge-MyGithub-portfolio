@@ -15,8 +15,7 @@ import { FaHome } from "react-icons/fa";
 // import Users from "./components/Users";
 // import User from "./components/User";
 import Hero from "./components/Hero";
-
-
+import {Scrollbars} from "react-custom-scrollbars-2";
 
 
 
@@ -54,6 +53,7 @@ function App() {
   
   return (
     <HelmetProvider>
+      
       <title>Developer Portfolio</title>
       <meta name="description" content="Frontend Developer" />
       <link rel="canonical" href="/Portfolio" />
@@ -82,7 +82,7 @@ function App() {
 
               {/* <Navbar/>
               <Hero/> */}
-              
+              <Scrollbars style={{width: "100%", height: "100%"}}>
               <Profile
                 alt="fetched data"
                 imgSrc={profiledata.avatar_url}
@@ -97,7 +97,7 @@ function App() {
                 medium_username={profiledata.medium_username}
               />
               <Github/>
-              
+              </Scrollbars>
               <div
                 style={{
                   minHeight: "100%",
@@ -106,17 +106,18 @@ function App() {
                 }}
               >
                  
-             
-                <Routes>
+               
+                {/* <Routes>
                   <Route path="/Profile" element={<Profile />}/>
                   <Route path="/Github" element={<Github/>} />
                   {/* <Route path="*" element={<Error404Page />} /> */}
-                </Routes>
+                {/* </Routes> */} 
               </div>
             </ErrorBoundary>
           </div>
         </section>
       </ThemeContext.Provider>
+      
     </HelmetProvider>
   );
 }

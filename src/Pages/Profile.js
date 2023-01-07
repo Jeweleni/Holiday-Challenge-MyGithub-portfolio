@@ -36,13 +36,13 @@ function Profile({
           {bio}</p>
           <a href="https://github.com/users/jeweleni"></a>
           </div>
-        <p>{location}</p>
+          <div className="location">
+          <p>{location}</p>
+          </div>
+       
         <div>
           <a href="https://github.com/jeweleni?tab=followers">
-            <button
-              className="
-          buttons"
-            >
+            <button className="buttons">
               Followers: {followers}
             </button>
           </a>
@@ -52,19 +52,21 @@ function Profile({
             <button className="buttons">Following: {following}</button>
           </a>
         </div>
-
+         
+         <div>
         <a href="https://twitter.com/jeweleni_diva/">
-          <button className="btns"><FaTwitter/> Twitter<i className="fa-brands fa-twitter"></i></button>
+          <button className="buttons"><FaTwitter/> Twitter<i className="fa-brands fa-twitter"></i></button>
         </a>
+        </div>
 
         <a href="https://github.com/jeweleni">
-          <button className="btns"><FaGithub/> GitHub<i className="fa-brands fa-github"></i></button>
+          <button className="buttons"><FaGithub/> GitHub<i className="fa-brands fa-github"></i></button>
         </a>
       </div>
 
       <a href=" https://medium.com/@EMJCREATES">
         
-        <button className="medium"><FaMedium/> Medium<i className="fa-brands fa-medium"></i></button>
+        <button className="buttons"><FaMedium/> Medium<i className="fa-brands fa-medium"></i></button>
       </a>
       
       {/* <div>alt="fetched data"
