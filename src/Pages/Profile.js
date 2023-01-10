@@ -69,19 +69,6 @@ function Profile({
             </button>
           </a>
      
-      
-      {/* <div>alt="fetched data"
-                imgSrc={profiledata.avatar_url}
-                name={profiledata.name}
-                bio={profiledata.bio}
-                location={profiledata.location}
-                followers={profiledata.followers}
-                following={profiledata.following}
-                public_repos={profiledata.public_repos}
-                html_url={profiledata.html_url}
-                twitter_username={profiledata.twitter_username}
-                medium_username={profiledata.medium_username}
-                </div> */}
     </div>
     </HelmetProvider>
     </>

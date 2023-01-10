@@ -1,22 +1,13 @@
 import React, { createContext, useState, useEffect } from "react";
 import Profile from "./Pages/Profile"
-import { Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
-// import {USER_PER_PAGE} from "./components/USER_PER_PAGE"
-// import Repo from "./components/Repo";
-import Error404Page from "./Pages/Error404Page";
 import Github from "./Pages/Github";
-import Navbar from "./components/Navbar";
 import axios from "axios";
 import ErrorFallback from "./components/ErrorBoundary";
 import { HelmetProvider } from "react-helmet-async";
 import ReactSwitch from "react-switch";
-import { FaHome } from "react-icons/fa";
-// import Users from "./components/Users";
-// import User from "./components/User";
 import Hero from "./components/Hero";
 import {Scrollbars} from "react-custom-scrollbars-2";
-
 
 
 export const ThemeContext = createContext("null");
@@ -39,7 +30,6 @@ function App() {
     Promise.all([repoPromise, profilePromise])
       .then(([repoResponse, profileResponse]) => {
         setPortFolio(repoResponse.data);
-        // setTotalPages(Math.ceil(repoResponse.data.length / USER_PER_PAGE));
         setLoading(false);
         setProfileData(profileResponse.data);
       })
@@ -107,12 +97,6 @@ function App() {
                 }}
               >
                  
-               
-                {/* <Routes>
-                  <Route path="/Profile" element={<Profile />}/>
-                  <Route path="/Github" element={<Github/>} />
-                  {/* <Route path="*" element={<Error404Page />} /> */}
-                {/* </Routes> */} 
               </div>
             </ErrorBoundary>
           </div>

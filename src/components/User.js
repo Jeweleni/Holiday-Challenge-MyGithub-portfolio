@@ -6,7 +6,7 @@ const User = ({ id, name, description, chooseRepo, html_url }) => {
   
   return (
     // <Link to={`/portfolio/${id}`}>
-      <div
+      <div className="id"
         
         id="user-data"
         style={{

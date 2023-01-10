@@ -127,6 +127,7 @@ h2{
   text-align: center;
   padding: 1rem;
   font-style: normal;
+  position: relative;
 
 }
 #light h2 {
@@ -135,7 +136,6 @@ h2{
 #dark h2 {
   color: rgb(255, 255, 255);
 }
-
 
 article {
   margin: auto;
@@ -146,11 +146,13 @@ article {
 }
 
 #light .article {
-  color: rgba(0, 0, 0, 0.907);
+  background-color: rgba(0, 0, 0, 0.907);
 }
 #dark .article {
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
+
+
 
 .buttons {
   justify-content: space-around;
@@ -177,6 +179,7 @@ a .buttons {
   font-size: 30px;
   text-align: center;
   margin-top: 20px;
+ 
   
 }
 #light .bio {
@@ -203,8 +206,7 @@ a .buttons {
   width: 285px;
   margin: 20px;
   font-size: 9px;
-  text-align: center;
-  position: relative;
+  position: inherit;
   text-align: center;
 }
 
