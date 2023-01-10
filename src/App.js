@@ -83,6 +83,7 @@ function App() {
               {/* <Navbar/>
               <Hero/> */}
               <Scrollbars style={{width: "100%", height: "100%"}}>
+                <Hero/>
               <Profile
                 alt="fetched data"
                 imgSrc={profiledata.avatar_url}

@@ -41,16 +41,16 @@ function Profile({
           </div>
        
         <div>
-          <a href="https://github.com/jeweleni?tab=followers">
-            <button className="buttons">
-              Followers: {followers}
-            </button>
-          </a>
+        <a href="https://github.com/jeweleni">
+          <button className="buttons"><FaGithub/> GitHub<i className="fa-brands fa-github"></i></button>
+        </a>
         </div>
         <div>
-          <a href="https://github.com/jeweleni?tab=following">
-            <button className="buttons">Following: {following}</button>
-          </a>
+        <a href=" https://medium.com/@EMJCREATES">
+        
+        <button className="buttons"><FaMedium/> Medium<i className="fa-brands fa-medium"></i></button>
+      </a>
+        
         </div>
          
          <div>
@@ -59,15 +59,16 @@ function Profile({
         </a>
         </div>
 
-        <a href="https://github.com/jeweleni">
-          <button className="buttons"><FaGithub/> GitHub<i className="fa-brands fa-github"></i></button>
-        </a>
+        <a href="https://github.com/jeweleni?tab=following">
+            <button className="buttons">Following: {following}</button>
+          </a>
       </div>
-
-      <a href=" https://medium.com/@EMJCREATES">
-        
-        <button className="buttons"><FaMedium/> Medium<i className="fa-brands fa-medium"></i></button>
-      </a>
+      <a href="https://github.com/jeweleni?tab=followers">
+            <button className="buttons">
+              Followers: {followers}
+            </button>
+          </a>
+     
       
       {/* <div>alt="fetched data"
                 imgSrc={profiledata.avatar_url}
