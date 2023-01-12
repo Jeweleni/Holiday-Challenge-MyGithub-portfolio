@@ -8,7 +8,7 @@ function Hero() {
             <div className="hello">
                 <h1 className="Welcome"> Welcome!!!
                 <span className="Welcome2"> This is </span> My GitHub Portfolio</h1>
-                <Link to="/Profile" className="For More">For More</Link>
+
 
             </div>
 

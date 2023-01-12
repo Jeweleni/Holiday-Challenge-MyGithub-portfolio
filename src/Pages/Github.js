@@ -44,7 +44,6 @@ function Github() {
       style={{ width: "100", 
       border: "1px soild black", 
       position: "relative", 
-      color: "rgb(217, 0, 0)",
       textAlign: "center",
      }}
     >

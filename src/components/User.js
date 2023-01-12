@@ -11,7 +11,6 @@ const User = ({ id, name, description, chooseRepo, html_url }) => {
         id="user-data"
         style={{
           border: "2px",
-          backgroundColor: "white",
           borderRadius: "10px",
           textAlign:"center",
         }}
